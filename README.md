@@ -6,6 +6,8 @@
 -   pandas
 -   pymongo
 -   ipywidgets
+-   networkx
+-   matplotlib
 
 ## Project Structure
 
@@ -49,3 +51,7 @@ $ python3 test_classifier.py
 ## Interface
 
 Simply run the `interface.ipynb` in VScode.
+
+![screenshot](./fraud_classify.png)
+
+![screenshot](./hipothesis_plot.png)

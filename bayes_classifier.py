@@ -5,6 +5,12 @@ import os
 from dotenv import load_dotenv
 
 
+available_hypotheses = {
+    'Naive Bayes': {"fraud": ["age", "gender", "amount_bin", "category"]},
+    'Structured (fraud->amount_bin, gender->age)': {"fraud": ["amount_bin"], "gender": ["age"]}
+}
+
+
 class BayesianClassifier:
     def __init__(
         self,
@@ -28,9 +34,10 @@ class BayesianClassifier:
         self.target_variable = "fraud"
         self.parents = defaultdict(list)
         # Naive Bayes Hyphothesis
-        for var in self.variables:
-            if var != self.target_variable:
-                self.parents[var].append(self.target_variable)
+        self.set_hypothesis(available_hypotheses["Naive Bayes"])
+        # for var in self.variables:
+        #     if var != self.target_variable:
+        #         self.parents[var].append(self.target_variable)
         # print(f'parents: {self.parents}')
         self.ensure_indexes()
 
@@ -101,11 +108,11 @@ class BayesianClassifier:
             time_total
         )
 
-    def set_hypothesis(self, target_variable):
-        if target_variable not in self.variables:
-            raise ValueError(f"Variable '{target_variable}' no encontrada.")
+    def set_hypothesis(self, hypothesis, target_variable="fraud"):
         self.target_variable = target_variable
         self.parents = defaultdict(list)
         for var in self.variables:
-            if var != self.target_variable:
-                self.parents[var].append(self.target_variable)
+            children = hypothesis.get(var, [])
+            for c in children:
+                self.parents[c].append(var)
+        print(f"Changed hypothesis to: {self.parents}")

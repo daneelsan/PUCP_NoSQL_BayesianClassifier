@@ -1,5 +1,6 @@
 # test_classifier.py
 from bayes_classifier import BayesianClassifier
+from bayes_classifier import available_hypotheses
 
 classifier = BayesianClassifier()
 
@@ -19,6 +20,16 @@ report({
 })
 
 # Fraud!
+report({
+    "gender": "F",
+    "age": "2",
+    "category": "es_travel",
+    "amount_bin": "medium",
+})
+
+# Change hypothesis
+classifier.set_hypothesis({"fraud": ["amount_bin"], "gender": ["age"]})
+
 report({
     "gender": "F",
     "age": "2",
