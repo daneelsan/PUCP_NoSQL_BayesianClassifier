@@ -1,21 +1,51 @@
 # [PUCP] NoSQL - Bayesian Network Classifier
 
+## Dependencies
+
+-   python-dotenv
+-   pandas
+-   pymongo
+-   ipywidgets
+
 ## Project Structure
 
 ```
 - fraud_credit_card.zip // The compressed data. Unzip this before working running upload.py
-- upload.py             // Module in charge of uploading the .csv into MongoDB
+- upload_dataset.py             // Module in charge of uploading the .csv into MongoDB
+- index_dataset.py      // Module in charge of indexing the dataset and storing metadata into MongoDB
 - interface.ipynb       // Module in charge of presenting an interface of the classifier to the user
-- classify.py           // Module in charge of classifing using Bayesian Networks and the MongoDB database
+- bayes_classifier.py           // Module in charge of classifing using Bayesian Networks and the MongoDB database
+- test_classifier.py           // Test file for bayes_classifier.py
+- .env                  // File containing environment settings
 ```
 
-## Upload to MongoDB
+## .env
+
+The `ATLASMONGODB_CONNECTION_STRING` variable is set in [.env](./.env).
+To modify the connection string, simply change the contents of this file.
+
+## Upload dataset to MongoDB
 
 ```python
-$ time python3 upload.py
+$ time python3 upload_dataset.py
 ```
+
+![screenshot](./upload_dataset.png)
+
+## Index dataset and metadata to MongoDB
+
+```python
+$ python3 index_dataset.py
+```
+
+## Test `bayes_classifier.py`
+
+```python
+$ python3 test_classifier.py
+```
+
+![screenshot](./test_classifier.png)
 
 ## Interface
 
 Simply run the `interface.ipynb` in VScode.
-

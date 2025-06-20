@@ -2,6 +2,10 @@ import pandas as pd
 from pymongo import MongoClient
 import math
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Cargar el .csv en un DataFrame
 df = pd.read_csv("fraud_credit_card.csv", sep=",", quotechar='"')
@@ -21,8 +25,8 @@ df["amount_bin"] = pd.cut(df["amount"], bins=bins,
                           labels=labels, include_lowest=True)
 
 # Convertir 'age' a número, marcando 'U' como None
-df["age"] = df["age"].apply(lambda x: int(
-    x.strip('\'')) if x != "'U'" else None)
+df["age"] = df["age"].apply(lambda x: 
+    x.strip('\'') if x != "'U'" else "U")
 
 # Quitar quotes de 'gender', 'U' es 'unknown'
 # NOTE: Cuando 'age' es 'U', 'gender' siempre es 'E' (7 de estos casos son fraude).
@@ -33,6 +37,10 @@ df["gender"] = df["gender"].apply(
 df["category"] = df["category"].apply(
     lambda x: x.strip('\'') if x != "'U'" else None)
 
+# Convertir 'fraud' a 'yes' or 'no'
+df["fraud"] = df["fraud"].apply(
+    lambda x: 'yes' if x == 1 else 'no')
+
 # Borrar columnas que no son relevantes para la inferencia.
 # Solo hay 1 único zipcodeOri y 1 único zipMerchant.
 # NOTE: Hay 50 distintos merchants, podría ser relevante.
@@ -41,13 +49,16 @@ df["category"] = df["category"].apply(
 df = df.drop(columns=["step", "customer",
              "zipcodeOri", "merchant", "zipMerchant"])
 
+# Ordenar columnas
+df = df[['age', 'gender', 'category', 'amount_bin', 'fraud']]
+
 print(f"Descripción del dataset:\n{df.describe()}\n")
 
 print(f"Primeras 5 filas:\n{df[0:5]}\n")
 
 # TODO: Guardar esto en un lugar más apropriado (see .env)
-os.environ["ATLASMONGODB_CONNECTION_STRING"] = "mongodb+srv://hdsanchez:danielsd300895@clusterpucp.wk8tiag.mongodb.ne\
-t/?retryWrites=true&w=majority&appName=ClusterPUCP"
+# os.environ["ATLASMONGODB_CONNECTION_STRING"] = "mongodb+srv://hdsanchez:danielsd300895@clusterpucp.wk8tiag.mongodb.ne\
+# t/?retryWrites=true&w=majority&appName=ClusterPUCP"
 
 # Conectar a MongoDB Atlas
 client = MongoClient(os.environ["ATLASMONGODB_CONNECTION_STRING"])
