@@ -6,8 +6,11 @@ from dotenv import load_dotenv
 
 
 available_hypotheses = {
-    'Naive Bayes': {"fraud": ["age", "gender", "amount_bin", "category"]},
-    'Structured (fraud->amount_bin, gender->age)': {"fraud": ["amount_bin"], "gender": ["age"]}
+    "Naive Bayes": {"fraud": ["age", "gender", "amount_bin", "category"]},
+    "Structured (fraud->amount_bin, gender->age)": {
+        "fraud": ["amount_bin"],
+        "gender": ["age"],
+    },
 }
 
 
@@ -15,17 +18,17 @@ class BayesianClassifier:
     def __init__(
         self,
         db_name="fraud_db",
-        index_collection="transactions_indexed",
-        meta_collection="metadata",
         alpha=1.0,
     ):
         # Load environment variables from .env file
         load_dotenv()
         self.client = MongoClient(
-            os.environ["ATLASMONGODB_CONNECTION_STRING"], readConcernLevel='local')
+            os.environ["ATLASMONGODB_CONNECTION_STRING"], readConcernLevel="local"
+        )
         self.db = self.client[db_name]
-        self.data_collection = self.db[index_collection]
-        self.meta = self.db[meta_collection]
+        self.data_collection = self.db["transactions_indexed"]
+        self.meta = self.db["metadata"]
+        self.precomputed = self.db["precomputed"]
         self.alpha = alpha
         self.cardinalities = self.load_cardinalities()
         # print(f'cardinalities: {self.cardinalities}')
@@ -56,8 +59,11 @@ class BayesianClassifier:
 
     def count_occurrencies(self, variable, value, context):
         context[variable] = value
-        count = self.data_collection.count_documents(context)
-        # print(f'context: {context}, count: {count}')
+        res = self.precomputed.find_one(context, { "count": 1 })
+        if res is not None:
+            count = res['count']
+        else:
+            count = self.data_collection.count_documents(context)
         return count
 
     def conditional_probability(self, variable, value, context, total):
@@ -81,7 +87,8 @@ class BayesianClassifier:
                 total = self.data_collection.count_documents(context_parents)
                 # Compute P(var=val | parents)
                 p = self.conditional_probability(
-                    var, context[var], context_parents, total)
+                    var, context[var], context_parents, total
+                )
                 prob_total *= p
             resultados.append((target_val, prob_total))
         return resultados
@@ -102,11 +109,7 @@ class BayesianClassifier:
         time_total = time.time() - time_start
         # print(f'Time: {time_total:.4f}s')
         # Return a tuple
-        return (
-            pred_clase == "1" or pred_clase == 1,
-            prob,
-            time_total
-        )
+        return (pred_clase == "1" or pred_clase == 1, prob, time_total)
 
     def set_hypothesis(self, hypothesis, target_variable="fraud"):
         self.target_variable = target_variable

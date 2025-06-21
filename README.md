@@ -40,6 +40,8 @@ $ time python3 upload_dataset.py
 $ python3 index_dataset.py
 ```
 
+![screenshot](./index_dataset.png)
+
 ## Test `bayes_classifier.py`
 
 ```python
