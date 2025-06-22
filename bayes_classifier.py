@@ -28,7 +28,7 @@ class BayesianClassifier:
         )
         self.db = self.client[db_name]
         self.data_collection = self.db["transactions_indexed"]
-        self.meta = self.db["metadata"]
+        self.N = self.data_collection.estimated_document_count()
         self.precomputed = self.db["precomputed"]
         self.alpha = alpha
         self.cardinalities = self.load_cardinalities()
@@ -47,7 +47,8 @@ class BayesianClassifier:
 
     def load_cardinalities(self):
         result = {}
-        for doc in self.meta.find({}):
+        cardinalities_col = self.db["cardinalities"]
+        for doc in cardinalities_col.find({}):
             result[doc["variable"]] = doc["mapping"]
         return result
 
@@ -58,18 +59,18 @@ class BayesianClassifier:
             for parent in self.parents[var]:
                 self.data_collection.create_index([(parent, 1), (var, 1)])
 
-    def count_occurrencies(self, variable, value, context):
-        context[variable] = value
-        res = self.precomputed.find_one(context, {"count": 1})
+    def compute_counts(self, evidence):
+        res = self.precomputed.find_one(evidence, {"count": 1})
         if res is not None:
             count = res["count"]
         else:
-            count = self.data_collection.count_documents(context)
+            count = self.data_collection.count_documents(evidence)
         return count
 
     def conditional_probability(self, variable, value, context, total):
         k = len(self.cardinalities[variable])
-        count = self.count_occurrencies(variable, value, context)
+        context[variable] = value
+        count = self.compute_counts(context)
         return (count + self.alpha) / (total + self.alpha * k)
 
     def compute_joint_distribution(self, evidence_indexed):
@@ -85,7 +86,11 @@ class BayesianClassifier:
                 parents = self.parents.get(var, [])
                 # Obtain the parent(s) context (indexed values)
                 context_parents = {p: context[p] for p in parents}
-                total = self.data_collection.count_documents(context_parents)
+                # If the variable is not conditioned, then the total is the size of the dataset
+                if len(context_parents) == 0:
+                    total = self.N
+                else:
+                    total = self.compute_counts(context_parents)
                 # Compute P(var=val | parents)
                 p = self.conditional_probability(
                     var, context[var], context_parents, total

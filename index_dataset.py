@@ -14,7 +14,7 @@ db = client["fraud_db"]
 original = db["transactions"]
 indexed = db["transactions_indexed"]
 precomputed = db["precomputed"]
-meta = db["metadata"]
+cardinalities_col = db["cardinalities"]
 
 BATCH_SIZE = 10000
 
@@ -42,10 +42,10 @@ def compute_cardinalities():
     return dict(cardinalities), dict(reverse_maps)
 
 
-def store_metadata(cardinalities):
-    meta.drop()
+def store_cardinalties(cardinalities):
+    cardinalities_col.drop()
     for var, cardinality in cardinalities.items():
-        meta.insert_one({"variable": var, "mapping": cardinality})
+        cardinalities_col.insert_one({"variable": var, "mapping": cardinality})
 
 
 def index_and_store(cardinalities):
@@ -64,32 +64,36 @@ def index_and_store(cardinalities):
         # print(f"{min(i + BATCH_SIZE, total)}/{total} docs indexed", flush=True)
 
 
-def precompute_and_store(cardinalities):
+def precompute_counts_and_store(cardinalities):
+    precomputed.drop()
     # precomputing Naive Bayes counts
     target_variable = "fraud"
     target_values = list(cardinalities[target_variable].values())
+    for target_val in target_values:
+        count = indexed.count_documents({target_variable: target_val})
+        precomputed.insert_one({target_variable: target_val, "count": count})
     for var, cardinality in cardinalities.items():
         for val in cardinality.values():
+            precomputed.insert_one({var: val, "count": indexed.count_documents({var: val})})
             for target_val in target_values:
                 count = indexed.count_documents({var: val, target_variable: target_val})
-                data = {var: val, target_variable: target_val, "count": count}
-                precomputed.insert_one(data)
+                precomputed.insert_one({var: val, target_variable: target_val, "count": count})
 
 
 def print_progress(current, total, bar_length=40):
     percent = current / total
     filled = int(bar_length * percent)
     bar = "█" * filled + "-" * (bar_length - filled)
-    print(f"\rProgreso: |{bar}| {current}/{total} docs\n", end="", flush=True)
+    print(f"\rProgreso: |{bar}| {current}/{total} docs", end="", flush=True)
 
 
 if __name__ == "__main__":
-    print("Computing cardinalities...", flush=True)
+    print("Computing cardinalities...")
     cardinalities, _ = compute_cardinalities()
-    print("Storing metadata...", flush=True)
-    store_metadata(cardinalities)
-    print("Indexing dataset...", flush=True)
+    print("Storing cardinalities...")
+    store_cardinalties(cardinalities)
+    print("Indexing dataset...")
     index_and_store(cardinalities)
-    print("Precomputing counts...", flush=True)
-    precompute_and_store(cardinalities)
-    print("\nDone.", flush=True)
+    print("\nPrecomputing counts...")
+    precompute_counts_and_store(cardinalities)
+    print("\nDone.")
