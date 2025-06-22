@@ -1,5 +1,16 @@
 # [PUCP] NoSQL - Bayesian Network Classifier
 
+## GitHub
+
+https://github.com/daneelsan/PUCP_NoSQL_BayesianClassifier/tree/main
+
+NOTE: El repositorio esta Private.
+
+## Integrantes
+
+- Javier Monzon (20121248, javier.monzon@pucp.edu.pe)
+- Daniel Sanchez (20130495, hdsanchez@pucp.edu.pe)
+
 ## Dependencies
 
 -   python-dotenv

@@ -3,6 +3,7 @@ from pymongo import MongoClient
 import time
 import os
 from dotenv import load_dotenv
+from functools import lru_cache
 
 
 available_hypotheses = {
@@ -59,9 +60,9 @@ class BayesianClassifier:
 
     def count_occurrencies(self, variable, value, context):
         context[variable] = value
-        res = self.precomputed.find_one(context, { "count": 1 })
+        res = self.precomputed.find_one(context, {"count": 1})
         if res is not None:
-            count = res['count']
+            count = res["count"]
         else:
             count = self.data_collection.count_documents(context)
         return count
