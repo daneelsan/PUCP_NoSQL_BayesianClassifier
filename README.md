@@ -20,6 +20,10 @@ NOTE: El repositorio esta Private.
 -   networkx
 -   matplotlib
 
+## Report
+
+El [reporte](./BBDD_Estructuradas.pdf) contiene detalles de este proyecto.
+
 ## Project Structure
 
 ```
