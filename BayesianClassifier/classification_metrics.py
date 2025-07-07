@@ -11,7 +11,13 @@ import time  # Ensure time is imported for timestamps if needed in metadata
 from bayes_classifier import BayesianClassifier
 from bayes_classifier import available_hypotheses
 
-from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score
+from sklearn.metrics import (
+    precision_score,
+    recall_score,
+    f1_score,
+    accuracy_score,
+    confusion_matrix,
+)
 
 
 # --- Función Principal de Medición de Métricas ---
@@ -96,27 +102,29 @@ def run_classification_metrics_comparison(hyphothesis_name):
         avg_classify_time = total_classify_time / classified_count
 
         # Calcular métricas de clasificación
-        # pos_label=True indica que 'True' es la clase positiva (fraude)
-        # zero_division=0 asegura que no haya errores si una clase no tiene instancias
         precision = precision_score(y_true, y_pred, pos_label=True, zero_division=0)
         recall = recall_score(y_true, y_pred, pos_label=True, zero_division=0)
         f1 = f1_score(y_true, y_pred, pos_label=True, zero_division=0)
         accuracy = accuracy_score(y_true, y_pred)
 
+        # CALCULAR MATRIZ DE CONFUSIÓN
+        # labels=[False, True] asegura que el orden sea [[TN, FP], [FN, TP]]
+        cm = confusion_matrix(y_true, y_pred, labels=[False, True])
+        tn, fp, fn, tp = cm.ravel()  # Desempaqueta la matriz de confusión
+
         print(f"\n--- Resultados de la Clasificación ({hyphothesis_name}) ---")
         print(f"  Muestras clasificadas: {classified_count}")
         print(f"  Tiempo promedio por clasificación: {avg_classify_time:.6f} segundos")
         print(f"  ------------------------------------------------")
-        print(
-            f"  **Accuracy (Exactitud):** {accuracy:.4f} (Proporción de predicciones correctas)"
-        )
-        print(
-            f"  **Precision (Precisión):** {precision:.4f} (De los predichos como fraude, ¿cuántos eran realmente fraude?)"
-        )
-        print(
-            f"  **Recall (Exhaustividad):** {recall:.4f} (De todos los fraudes reales, ¿cuántos fueron detectados?)"
-        )
-        print(f"  **F1-Score:** {f1:.4f} (Media armónica de Precision y Recall)")
+        print(f"  **Accuracy (Exactitud):** {accuracy:.4f}")
+        print(f"  **Precision (Precisión):** {precision:.4f}")
+        print(f"  **Recall (Exhaustividad):** {recall:.4f}")
+        print(f"  **F1-Score:** {f1:.4f}")
+        print(f"  ------------------------------------------------")
+        print(f"  **Verdaderos Positivos (TP):** {tp}")
+        print(f"  **Verdaderos Negativos (TN):** {tn}")
+        print(f"  **Falsos Positivos (FP):** {fp}")
+        print(f"  **Falsos Negativos (FN):** {fn}")
         print(f"  ------------------------------------------------")
 
         # Almacenar los resultados en el diccionario
@@ -131,6 +139,10 @@ def run_classification_metrics_comparison(hyphothesis_name):
                 "precision": round(precision, 4),
                 "recall": round(recall, 4),
                 "f1_score": round(f1, 4),
+                "true_positives": int(tp),
+                "true_negatives": int(tn),
+                "false_positives": int(fp),
+                "false_negatives": int(fn),
             },
             "performance": {"avg_classification_time_s": round(avg_classify_time, 6)},
             "timestamp": time.strftime(

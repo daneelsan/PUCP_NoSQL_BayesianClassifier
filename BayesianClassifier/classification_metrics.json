@@ -6,15 +6,19 @@
             "evaluated_samples_count": 5000
         },
         "metrics": {
-            "accuracy": 0.977,
-            "precision": 0.3354,
-            "recall": 0.8413,
-            "f1_score": 0.4796
+            "accuracy": 0.9768,
+            "precision": 0.2414,
+            "recall": 0.8537,
+            "f1_score": 0.3763,
+            "true_positives": 35,
+            "true_negatives": 4849,
+            "false_positives": 110,
+            "false_negatives": 6
         },
         "performance": {
-            "avg_classification_time_s": 0.000247
+            "avg_classification_time_s": 0.000245
         },
-        "timestamp": "2025-07-07 20:49:15"
+        "timestamp": "2025-07-07 21:26:52"
     },
     {
         "model": "Fraud as Root Cause",
@@ -23,15 +27,19 @@
             "evaluated_samples_count": 5000
         },
         "metrics": {
-            "accuracy": 0.9892,
-            "precision": 0.7143,
-            "recall": 0.3623,
-            "f1_score": 0.4808
+            "accuracy": 0.9908,
+            "precision": 0.6774,
+            "recall": 0.3684,
+            "f1_score": 0.4773,
+            "true_positives": 21,
+            "true_negatives": 4933,
+            "false_positives": 10,
+            "false_negatives": 36
         },
         "performance": {
-            "avg_classification_time_s": 0.002371
+            "avg_classification_time_s": 0.002359
         },
-        "timestamp": "2025-07-07 20:49:29"
+        "timestamp": "2025-07-07 21:27:04"
     },
     {
         "model": "Fraud as Mediator",
@@ -40,15 +48,19 @@
             "evaluated_samples_count": 5000
         },
         "metrics": {
-            "accuracy": 0.9764,
-            "precision": 0.3373,
-            "recall": 0.9048,
-            "f1_score": 0.4914
+            "accuracy": 0.979,
+            "precision": 0.3907,
+            "recall": 0.8194,
+            "f1_score": 0.5291,
+            "true_positives": 59,
+            "true_negatives": 4836,
+            "false_positives": 92,
+            "false_negatives": 13
         },
         "performance": {
-            "avg_classification_time_s": 0.000776
+            "avg_classification_time_s": 0.000767
         },
-        "timestamp": "2025-07-07 20:49:33"
+        "timestamp": "2025-07-07 21:27:09"
     },
     {
         "model": "Demographic-Driven Fraud",
@@ -57,15 +69,19 @@
             "evaluated_samples_count": 5000
         },
         "metrics": {
-            "accuracy": 0.9858,
+            "accuracy": 0.9878,
             "precision": 0.0,
             "recall": 0.0,
-            "f1_score": 0.0
+            "f1_score": 0.0,
+            "true_positives": 0,
+            "true_negatives": 4939,
+            "false_positives": 12,
+            "false_negatives": 49
         },
         "performance": {
-            "avg_classification_time_s": 0.002609
+            "avg_classification_time_s": 0.002275
         },
-        "timestamp": "2025-07-07 20:49:55"
+        "timestamp": "2025-07-07 21:27:21"
     },
     {
         "model": "High-Risk Category Focus",
@@ -74,15 +90,19 @@
             "evaluated_samples_count": 5000
         },
         "metrics": {
-            "accuracy": 0.9766,
-            "precision": 0.3273,
-            "recall": 0.9,
-            "f1_score": 0.48
+            "accuracy": 0.9794,
+            "precision": 0.3566,
+            "recall": 0.8226,
+            "f1_score": 0.4976,
+            "true_positives": 51,
+            "true_negatives": 4846,
+            "false_positives": 92,
+            "false_negatives": 11
         },
         "performance": {
-            "avg_classification_time_s": 0.000778
+            "avg_classification_time_s": 0.001013
         },
-        "timestamp": "2025-07-07 20:50:00"
+        "timestamp": "2025-07-07 21:27:27"
     },
     {
         "model": "Known Fraud Patterns",
@@ -92,13 +112,17 @@
         },
         "metrics": {
             "accuracy": 0.9768,
-            "precision": 0.2391,
-            "recall": 0.75,
-            "f1_score": 0.3626
+            "precision": 0.3208,
+            "recall": 0.8644,
+            "f1_score": 0.4679,
+            "true_positives": 51,
+            "true_negatives": 4833,
+            "false_positives": 108,
+            "false_negatives": 8
         },
         "performance": {
-            "avg_classification_time_s": 0.000492
+            "avg_classification_time_s": 0.000451
         },
-        "timestamp": "2025-07-07 20:50:03"
+        "timestamp": "2025-07-07 21:27:30"
     }
 ]
