@@ -1,0 +1,104 @@
+[
+    {
+        "model": "Naive Bayes",
+        "dataset_info": {
+            "total_documents_in_db": 594643,
+            "evaluated_samples_count": 5000
+        },
+        "metrics": {
+            "accuracy": 0.977,
+            "precision": 0.3354,
+            "recall": 0.8413,
+            "f1_score": 0.4796
+        },
+        "performance": {
+            "avg_classification_time_s": 0.000247
+        },
+        "timestamp": "2025-07-07 20:49:15"
+    },
+    {
+        "model": "Fraud as Root Cause",
+        "dataset_info": {
+            "total_documents_in_db": 594643,
+            "evaluated_samples_count": 5000
+        },
+        "metrics": {
+            "accuracy": 0.9892,
+            "precision": 0.7143,
+            "recall": 0.3623,
+            "f1_score": 0.4808
+        },
+        "performance": {
+            "avg_classification_time_s": 0.002371
+        },
+        "timestamp": "2025-07-07 20:49:29"
+    },
+    {
+        "model": "Fraud as Mediator",
+        "dataset_info": {
+            "total_documents_in_db": 594643,
+            "evaluated_samples_count": 5000
+        },
+        "metrics": {
+            "accuracy": 0.9764,
+            "precision": 0.3373,
+            "recall": 0.9048,
+            "f1_score": 0.4914
+        },
+        "performance": {
+            "avg_classification_time_s": 0.000776
+        },
+        "timestamp": "2025-07-07 20:49:33"
+    },
+    {
+        "model": "Demographic-Driven Fraud",
+        "dataset_info": {
+            "total_documents_in_db": 594643,
+            "evaluated_samples_count": 5000
+        },
+        "metrics": {
+            "accuracy": 0.9858,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0
+        },
+        "performance": {
+            "avg_classification_time_s": 0.002609
+        },
+        "timestamp": "2025-07-07 20:49:55"
+    },
+    {
+        "model": "High-Risk Category Focus",
+        "dataset_info": {
+            "total_documents_in_db": 594643,
+            "evaluated_samples_count": 5000
+        },
+        "metrics": {
+            "accuracy": 0.9766,
+            "precision": 0.3273,
+            "recall": 0.9,
+            "f1_score": 0.48
+        },
+        "performance": {
+            "avg_classification_time_s": 0.000778
+        },
+        "timestamp": "2025-07-07 20:50:00"
+    },
+    {
+        "model": "Known Fraud Patterns",
+        "dataset_info": {
+            "total_documents_in_db": 594643,
+            "evaluated_samples_count": 5000
+        },
+        "metrics": {
+            "accuracy": 0.9768,
+            "precision": 0.2391,
+            "recall": 0.75,
+            "f1_score": 0.3626
+        },
+        "performance": {
+            "avg_classification_time_s": 0.000492
+        },
+        "timestamp": "2025-07-07 20:50:03"
+    }
+]

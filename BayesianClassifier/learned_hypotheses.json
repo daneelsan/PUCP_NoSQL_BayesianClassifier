@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "dataset_size": 594643,
+    "variables": [
+      "age",
+      "gender",
+      "category",
+      "amount_bin",
+      "fraud"
+    ],
+    "cardinalities": {
+      "age": 8,
+      "gender": 4,
+      "category": 15,
+      "amount_bin": 4,
+      "fraud": 2
+    },
+    "learning_timestamp": 1751895501.879848
+  },
+  "hypotheses": {
+    "Naive Bayes": {
+      "fraud": [
+        "age",
+        "gender",
+        "amount_bin",
+        "category"
+      ]
+    },
+    "Structured (fraud->amount_bin, gender->age)": {
+      "fraud": [
+        "amount_bin"
+      ],
+      "gender": [
+        "age"
+      ]
+    },
+    "K2 learned (u=1)": {},
+    "K2 learned (u=2)": {},
+    "K2 learned (u=3)": {},
+    "K2 learned (u=4)": {},
+    "K2 learned (u=5)": {}
+  },
+  "learning_details": {
+    "K2 learned (u=1)": {
+      "structure": {
+        "age": [],
+        "gender": [],
+        "amount_bin": [],
+        "category": [],
+        "fraud": []
+      },
+      "u": 1,
+      "learning_time": 115.68761801719666
+    },
+    "K2 learned (u=2)": {
+      "structure": {
+        "age": [],
+        "gender": [],
+        "amount_bin": [],
+        "category": [],
+        "fraud": []
+      },
+      "u": 2,
+      "learning_time": 118.3598210811615
+    },
+    "K2 learned (u=3)": {
+      "structure": {
+        "age": [],
+        "gender": [],
+        "amount_bin": [],
+        "category": [],
+        "fraud": []
+      },
+      "u": 3,
+      "learning_time": 118.00201773643494
+    },
+    "K2 learned (u=4)": {
+      "structure": {
+        "age": [],
+        "gender": [],
+        "amount_bin": [],
+        "category": [],
+        "fraud": []
+      },
+      "u": 4,
+      "learning_time": 115.98895692825317
+    },
+    "K2 learned (u=5)": {
+      "structure": {
+        "age": [],
+        "gender": [],
+        "amount_bin": [],
+        "category": [],
+        "fraud": []
+      },
+      "u": 5,
+      "learning_time": 119.79355597496033
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+    "Naive Bayes": {
+        "fraud": [
+            "age",
+            "gender",
+            "amount_bin",
+            "category"
+        ]
+    },
+    "Fraud as Root Cause": {
+        "category": [
+            "fraud",
+            "gender"
+        ],
+        "amount_bin": [
+            "fraud",
+            "age"
+        ]
+    },
+    "Fraud as Mediator": {
+        "fraud": [
+            "amount_bin",
+            "category"
+        ],
+        "amount_bin": [
+            "age"
+        ],
+        "category": [
+            "gender"
+        ]
+    },
+    "Demographic-Driven Fraud": {
+        "fraud": [
+            "age",
+            "gender"
+        ],
+        "amount_bin": [
+            "age"
+        ],
+        "category": [
+            "gender",
+            "amount_bin"
+        ]
+    },
+    "High-Risk Category Focus": {
+        "fraud": [
+            "category",
+            "amount_bin"
+        ],
+        "category": [
+            "gender"
+        ],
+        "amount_bin": [
+            "age"
+        ]
+    },
+    "Known Fraud Patterns": {
+        "fraud": [
+            "category",
+            "amount_bin",
+            "gender"
+        ],
+        "amount_bin": [
+            "age"
+        ]
+    }
+}

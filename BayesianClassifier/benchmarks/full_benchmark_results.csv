@@ -1,0 +1,121 @@
+hypothesis,evidence_id,avg_time_sec,fraud_prediction,probability,age,gender,category,amount_bin
+Naive Bayes,1,0.3185058355331421,False,0.0017872498481123003,3,M,es_health,low
+Naive Bayes,2,0.3258896112442017,False,0.000804680206059298,4,F,es_food,very low
+Naive Bayes,3,0.32071473598480227,False,3.848580254576895e-06,4,M,es_travel,very low
+Naive Bayes,4,0.3226485729217529,False,0.002893071006041,4,F,es_food,low
+Naive Bayes,5,0.3284313440322876,True,4.679927467359697e-06,5,F,es_travel,medium
+Naive Bayes,6,0.3179914474487305,False,0.006610520493699703,5,F,es_transportation,medium
+Naive Bayes,7,0.32069199085235595,False,4.676695714430031e-05,2,F,es_hotelservices,medium
+Naive Bayes,8,0.3177873849868774,False,0.00021185766074890416,5,M,es_health,very low
+Naive Bayes,9,0.336106276512146,False,9.489128282921252e-07,3,E,es_barsandrestaurants,very low
+Naive Bayes,10,0.3181630611419678,True,4.137348817670879e-07,5,M,es_leisure,very low
+Naive Bayes,11,0.32065980434417723,False,2.31079352319567e-07,2,E,es_hotelservices,very low
+Naive Bayes,12,0.3220656871795654,False,0.020913403524656312,3,F,es_transportation,very low
+Naive Bayes,13,0.32290537357330323,False,0.00028573630098454374,5,M,es_food,medium
+Naive Bayes,14,0.31923823356628417,True,2.203000319938024e-08,2,E,es_leisure,medium
+Naive Bayes,15,0.3185516595840454,False,0.0002589333735413378,3,F,es_barsandrestaurants,very low
+Naive Bayes,16,0.3177522897720337,True,6.950987122406881e-05,2,F,es_otherservices,high
+Naive Bayes,17,0.3203194856643677,True,2.685341442619192e-08,2,E,es_travel,medium
+Naive Bayes,18,0.3181410312652588,False,0.011482121042819813,4,F,es_transportation,medium
+Naive Bayes,19,0.32441282272338867,False,6.097647377241425e-08,4,E,es_travel,low
+Naive Bayes,20,0.32380740642547606,False,1.4899738670148327e-05,5,F,es_barsandrestaurants,high
+Fraud as Root Cause,1,0.49082274436950685,False,0.0017743169755545561,3,M,es_health,low
+Fraud as Root Cause,2,0.48784923553466797,False,0.00080057924439998,4,F,es_food,very low
+Fraud as Root Cause,3,0.43300867080688477,False,9.674892688625885e-06,4,M,es_travel,very low
+Fraud as Root Cause,4,0.5185296773910523,False,0.002861141729976334,4,F,es_food,low
+Fraud as Root Cause,5,0.42560269832611086,False,6.672441523500628e-06,5,F,es_travel,medium
+Fraud as Root Cause,6,1.1502106428146361,False,0.0065383214160125444,5,F,es_transportation,medium
+Fraud as Root Cause,7,0.43922240734100343,False,6.420994841095613e-05,2,F,es_hotelservices,medium
+Fraud as Root Cause,8,0.4552986860275269,False,0.00021130718585544214,5,M,es_health,very low
+Fraud as Root Cause,9,0.445884108543396,False,1.1200576074896049e-06,3,E,es_barsandrestaurants,very low
+Fraud as Root Cause,10,0.43514647483825686,False,2.8205055454949315e-06,5,M,es_leisure,very low
+Fraud as Root Cause,11,0.44535121917724607,False,6.986639181388306e-07,2,E,es_hotelservices,very low
+Fraud as Root Cause,12,1.2191227912902831,False,0.020613596757435626,3,F,es_transportation,very low
+Fraud as Root Cause,13,0.4804487943649292,False,0.00028209402124560124,5,M,es_food,medium
+Fraud as Root Cause,14,0.43355872631073,False,1.0817520846753072e-07,2,E,es_leisure,medium
+Fraud as Root Cause,15,0.447730565071106,False,0.0002642589248603808,3,F,es_barsandrestaurants,very low
+Fraud as Root Cause,16,0.4290207624435425,False,4.853194613110097e-06,2,F,es_otherservices,high
+Fraud as Root Cause,17,0.4501790523529053,False,4.387783751170709e-08,2,E,es_travel,medium
+Fraud as Root Cause,18,1.19548442363739,False,0.011438376184048535,4,F,es_transportation,medium
+Fraud as Root Cause,19,0.45932276248931886,False,1.0714843142354377e-07,4,E,es_travel,low
+Fraud as Root Cause,20,0.4375570058822632,False,1.5514089060324353e-05,5,F,es_barsandrestaurants,high
+Fraud as Mediator,1,0.48645758628845215,False,0.0016583123551332391,3,M,es_health,low
+Fraud as Mediator,2,0.4211514949798584,False,0.0008097304460785103,4,F,es_food,very low
+Fraud as Mediator,3,0.3991538047790527,False,3.18430702109497e-06,4,M,es_travel,very low
+Fraud as Mediator,4,0.43129332065582277,False,0.002892846592636448,4,F,es_food,low
+Fraud as Mediator,5,0.3982063055038452,True,4.876004963578078e-06,5,F,es_travel,medium
+Fraud as Mediator,6,0.5251574039459228,False,0.0065731591913993775,5,F,es_transportation,medium
+Fraud as Mediator,7,0.4042879343032837,False,4.943515234889448e-05,2,F,es_hotelservices,medium
+Fraud as Mediator,8,0.4003926753997803,False,0.00019663293153601087,5,M,es_health,very low
+Fraud as Mediator,9,0.3967087984085083,False,1.117241527187556e-06,3,E,es_barsandrestaurants,very low
+Fraud as Mediator,10,0.3921617031097412,True,4.765437709719624e-07,5,M,es_leisure,very low
+Fraud as Mediator,11,0.4015912294387817,False,5.958311114486642e-07,2,E,es_hotelservices,very low
+Fraud as Mediator,12,0.5415497779846191,False,0.020844088988204484,3,F,es_transportation,very low
+Fraud as Mediator,13,0.40391528606414795,False,0.0002836314334692677,5,M,es_food,medium
+Fraud as Mediator,14,0.4027105808258057,True,7.656190232471458e-08,2,E,es_leisure,medium
+Fraud as Mediator,15,0.40390868186950685,False,0.000263594517647784,3,F,es_barsandrestaurants,very low
+Fraud as Mediator,16,0.4013344764709473,True,5.6094850417016973e-05,2,F,es_otherservices,high
+Fraud as Mediator,17,0.40215938091278075,True,3.206450783339502e-08,2,E,es_travel,medium
+Fraud as Mediator,18,0.5332016706466675,False,0.011499322649499754,4,F,es_transportation,medium
+Fraud as Mediator,19,0.4308536291122437,False,4.16713165735912e-08,4,E,es_travel,low
+Fraud as Mediator,20,0.3890181303024292,False,1.3958034056329152e-05,5,F,es_barsandrestaurants,high
+Demographic-Driven Fraud,1,0.5574544191360473,False,0.0006230555453274999,3,M,es_health,low
+Demographic-Driven Fraud,2,0.4767263650894165,False,0.0006497654767299528,4,F,es_food,very low
+Demographic-Driven Fraud,3,0.43650600910186765,False,1.4432860349109134e-06,4,M,es_travel,very low
+Demographic-Driven Fraud,4,0.5566273927688599,False,0.002450032508354916,4,F,es_food,low
+Demographic-Driven Fraud,5,0.4216717004776001,False,1.0707744570584594e-06,5,F,es_travel,medium
+Demographic-Driven Fraud,6,1.0431724071502686,False,0.005286583957996865,5,F,es_transportation,medium
+Demographic-Driven Fraud,7,0.4523064613342285,False,9.115408612549426e-05,2,F,es_hotelservices,medium
+Demographic-Driven Fraud,8,0.4437147617340088,False,6.799664858381917e-05,5,M,es_health,very low
+Demographic-Driven Fraud,9,0.4467040538787842,False,9.158990868909129e-07,3,E,es_barsandrestaurants,very low
+Demographic-Driven Fraud,10,0.42712242603302003,False,7.805900405945848e-08,5,M,es_leisure,very low
+Demographic-Driven Fraud,11,0.45015573501586914,False,2.8951354593309213e-07,2,E,es_hotelservices,very low
+Demographic-Driven Fraud,12,1.075600266456604,False,0.021874842788018375,3,F,es_transportation,very low
+Demographic-Driven Fraud,13,0.46642816066741943,False,0.0005664614517555659,5,M,es_food,medium
+Demographic-Driven Fraud,14,0.443363618850708,False,4.3134454847602985e-07,2,E,es_leisure,medium
+Demographic-Driven Fraud,15,0.4571117639541626,False,0.00021114526949791846,3,F,es_barsandrestaurants,very low
+Demographic-Driven Fraud,16,0.4170228958129883,False,0.00011001430790021067,2,F,es_otherservices,high
+Demographic-Driven Fraud,17,0.4400593042373657,False,4.0689843827299954e-08,2,E,es_travel,medium
+Demographic-Driven Fraud,18,1.0412285804748536,False,0.009245838785593657,4,F,es_transportation,medium
+Demographic-Driven Fraud,19,0.5029200553894043,False,2.3568368350283214e-08,4,E,es_travel,low
+Demographic-Driven Fraud,20,0.41950967311859133,False,3.1012752038105984e-05,5,F,es_barsandrestaurants,high
+High-Risk Category Focus,1,0.4470857858657837,False,0.0016583123551332391,3,M,es_health,low
+High-Risk Category Focus,2,0.41129255294799805,False,0.0008097304460785103,4,F,es_food,very low
+High-Risk Category Focus,3,0.40277416706085206,False,3.18430702109497e-06,4,M,es_travel,very low
+High-Risk Category Focus,4,0.43431668281555175,False,0.002892846592636448,4,F,es_food,low
+High-Risk Category Focus,5,0.40470693111419676,True,4.876004963578078e-06,5,F,es_travel,medium
+High-Risk Category Focus,6,0.5345378637313842,False,0.0065731591913993775,5,F,es_transportation,medium
+High-Risk Category Focus,7,0.4066531896591187,False,4.943515234889448e-05,2,F,es_hotelservices,medium
+High-Risk Category Focus,8,0.40937960147857666,False,0.00019663293153601087,5,M,es_health,very low
+High-Risk Category Focus,9,0.4064127683639526,False,1.117241527187556e-06,3,E,es_barsandrestaurants,very low
+High-Risk Category Focus,10,0.400974440574646,True,4.765437709719624e-07,5,M,es_leisure,very low
+High-Risk Category Focus,11,0.418363094329834,False,5.958311114486642e-07,2,E,es_hotelservices,very low
+High-Risk Category Focus,12,0.5482113122940063,False,0.020844088988204484,3,F,es_transportation,very low
+High-Risk Category Focus,13,0.40390064716339114,False,0.0002836314334692677,5,M,es_food,medium
+High-Risk Category Focus,14,0.40802180767059326,True,7.656190232471458e-08,2,E,es_leisure,medium
+High-Risk Category Focus,15,0.4112675905227661,False,0.000263594517647784,3,F,es_barsandrestaurants,very low
+High-Risk Category Focus,16,0.3955358982086182,True,5.6094850417016973e-05,2,F,es_otherservices,high
+High-Risk Category Focus,17,0.40935444831848145,True,3.206450783339502e-08,2,E,es_travel,medium
+High-Risk Category Focus,18,0.5336052179336548,False,0.011499322649499754,4,F,es_transportation,medium
+High-Risk Category Focus,19,0.43610193729400637,False,4.16713165735912e-08,4,E,es_travel,low
+High-Risk Category Focus,20,0.3947255849838257,False,1.3958034056329152e-05,5,F,es_barsandrestaurants,high
+Known Fraud Patterns,1,0.4091736555099487,False,0.0017871312083727977,3,M,es_health,low
+Known Fraud Patterns,2,0.36698007583618164,False,0.0008082004295459154,4,F,es_food,very low
+Known Fraud Patterns,3,0.36619536876678466,False,3.865416585954599e-06,4,M,es_travel,very low
+Known Fraud Patterns,4,0.397063684463501,False,0.0028873804487679166,4,F,es_food,low
+Known Fraud Patterns,5,0.3587637901306152,True,5.159421637584344e-06,5,F,es_travel,medium
+Known Fraud Patterns,6,0.36798319816589353,False,0.006585985652082925,5,F,es_transportation,medium
+Known Fraud Patterns,7,0.36759421825408933,False,4.690260942381579e-05,2,F,es_hotelservices,medium
+Known Fraud Patterns,8,0.37183959484100343,False,0.00021190751395782875,5,M,es_health,very low
+Known Fraud Patterns,9,0.3665482044219971,False,9.476133035004634e-07,3,E,es_barsandrestaurants,very low
+Known Fraud Patterns,10,0.3629356861114502,True,4.579321084348253e-07,5,M,es_leisure,very low
+Known Fraud Patterns,11,0.3718364715576172,False,2.3087718390027324e-07,2,E,es_hotelservices,very low
+Known Fraud Patterns,12,0.37385551929473876,False,0.020884762868161835,3,F,es_transportation,very low
+Known Fraud Patterns,13,0.3583765745162964,False,0.0002846757952504641,5,M,es_food,medium
+Known Fraud Patterns,14,0.3730276823043823,True,2.138291886137226e-08,2,E,es_leisure,medium
+Known Fraud Patterns,15,0.367951488494873,False,0.0002585787673770275,3,F,es_barsandrestaurants,very low
+Known Fraud Patterns,16,0.3593596935272217,True,6.721544689454119e-05,2,F,es_otherservices,high
+Known Fraud Patterns,17,0.36837058067321776,True,2.6064652675230605e-08,2,E,es_travel,medium
+Known Fraud Patterns,18,0.3669899940490723,False,0.011521761724160263,4,F,es_transportation,medium
+Known Fraud Patterns,19,0.3880614280700684,False,6.085653543851646e-08,4,E,es_travel,low
+Known Fraud Patterns,20,0.3589684724807739,False,1.3692436676983014e-05,5,F,es_barsandrestaurants,high

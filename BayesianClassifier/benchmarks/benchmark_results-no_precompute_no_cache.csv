@@ -1,0 +1,301 @@
+test_id,repeat,category,gender,age,amount_bin,fraud_prediction,probability,elapsed,hypothesis
+0,0,es_fashion,M,0,medium,False,2.6779276987870957e-06,1.2088110446929932,Naive Bayes
+0,1,es_fashion,M,0,medium,False,2.6779276987870957e-06,1.1812708377838135,Naive Bayes
+0,2,es_fashion,M,0,medium,False,2.6779276987870957e-06,1.2013661861419678,Naive Bayes
+0,3,es_fashion,M,0,medium,False,2.6779276987870957e-06,1.191572904586792,Naive Bayes
+0,4,es_fashion,M,0,medium,False,2.6779276987870957e-06,1.181107997894287,Naive Bayes
+0,5,es_fashion,M,0,medium,False,2.6779276987870957e-06,1.1846637725830078,Naive Bayes
+0,6,es_fashion,M,0,medium,False,2.6779276987870957e-06,1.1789131164550781,Naive Bayes
+0,7,es_fashion,M,0,medium,False,2.6779276987870957e-06,1.187572956085205,Naive Bayes
+0,8,es_fashion,M,0,medium,False,2.6779276987870957e-06,1.1854569911956787,Naive Bayes
+0,9,es_fashion,M,0,medium,False,2.6779276987870957e-06,1.1812658309936523,Naive Bayes
+1,0,es_food,F,2,very low,False,0.001383059058821831,1.259843111038208,Naive Bayes
+1,1,es_food,F,2,very low,False,0.001383059058821831,1.2515459060668945,Naive Bayes
+1,2,es_food,F,2,very low,False,0.001383059058821831,1.2541618347167969,Naive Bayes
+1,3,es_food,F,2,very low,False,0.001383059058821831,1.257646083831787,Naive Bayes
+1,4,es_food,F,2,very low,False,0.001383059058821831,1.253633737564087,Naive Bayes
+1,5,es_food,F,2,very low,False,0.001383059058821831,1.2500801086425781,Naive Bayes
+1,6,es_food,F,2,very low,False,0.001383059058821831,1.2497329711914062,Naive Bayes
+1,7,es_food,F,2,very low,False,0.001383059058821831,1.2596182823181152,Naive Bayes
+1,8,es_food,F,2,very low,False,0.001383059058821831,1.2680001258850098,Naive Bayes
+1,9,es_food,F,2,very low,False,0.001383059058821831,1.2543699741363525,Naive Bayes
+2,0,es_fashion,M,6,very low,False,3.980547017910571e-05,1.1983001232147217,Naive Bayes
+2,1,es_fashion,M,6,very low,False,3.980547017910571e-05,1.1953330039978027,Naive Bayes
+2,2,es_fashion,M,6,very low,False,3.980547017910571e-05,1.195216178894043,Naive Bayes
+2,3,es_fashion,M,6,very low,False,3.980547017910571e-05,1.1914541721343994,Naive Bayes
+2,4,es_fashion,M,6,very low,False,3.980547017910571e-05,1.1972160339355469,Naive Bayes
+2,5,es_fashion,M,6,very low,False,3.980547017910571e-05,1.1932189464569092,Naive Bayes
+2,6,es_fashion,M,6,very low,False,3.980547017910571e-05,1.1931920051574707,Naive Bayes
+2,7,es_fashion,M,6,very low,False,3.980547017910571e-05,1.2028899192810059,Naive Bayes
+2,8,es_fashion,M,6,very low,False,3.980547017910571e-05,1.2091619968414307,Naive Bayes
+2,9,es_fashion,M,6,very low,False,3.980547017910571e-05,1.2106640338897705,Naive Bayes
+3,0,es_transportation,M,3,low,False,0.06252774922277914,1.4313199520111084,Naive Bayes
+3,1,es_transportation,M,3,low,False,0.06252774922277914,1.4494550228118896,Naive Bayes
+3,2,es_transportation,M,3,low,False,0.06252774922277914,1.418071985244751,Naive Bayes
+3,3,es_transportation,M,3,low,False,0.06252774922277914,1.415921688079834,Naive Bayes
+3,4,es_transportation,M,3,low,False,0.06252774922277914,1.415816068649292,Naive Bayes
+3,5,es_transportation,M,3,low,False,0.06252774922277914,1.4140641689300537,Naive Bayes
+3,6,es_transportation,M,3,low,False,0.06252774922277914,1.412938117980957,Naive Bayes
+3,7,es_transportation,M,3,low,False,0.06252774922277914,1.4168040752410889,Naive Bayes
+3,8,es_transportation,M,3,low,False,0.06252774922277914,1.4120209217071533,Naive Bayes
+3,9,es_transportation,M,3,low,False,0.06252774922277914,1.414255142211914,Naive Bayes
+4,0,es_wellnessandbeauty,M,3,high,True,8.36533111201975e-05,1.2125389575958252,Naive Bayes
+4,1,es_wellnessandbeauty,M,3,high,True,8.36533111201975e-05,1.222470998764038,Naive Bayes
+4,2,es_wellnessandbeauty,M,3,high,True,8.36533111201975e-05,1.2461278438568115,Naive Bayes
+4,3,es_wellnessandbeauty,M,3,high,True,8.36533111201975e-05,1.2090637683868408,Naive Bayes
+4,4,es_wellnessandbeauty,M,3,high,True,8.36533111201975e-05,1.21272611618042,Naive Bayes
+4,5,es_wellnessandbeauty,M,3,high,True,8.36533111201975e-05,1.2069661617279053,Naive Bayes
+4,6,es_wellnessandbeauty,M,3,high,True,8.36533111201975e-05,1.2181780338287354,Naive Bayes
+4,7,es_wellnessandbeauty,M,3,high,True,8.36533111201975e-05,1.2270379066467285,Naive Bayes
+4,8,es_wellnessandbeauty,M,3,high,True,8.36533111201975e-05,1.2108473777770996,Naive Bayes
+4,9,es_wellnessandbeauty,M,3,high,True,8.36533111201975e-05,1.2050187587738037,Naive Bayes
+5,0,es_food,U,4,very low,False,1.2983258277672783e-06,1.1757392883300781,Naive Bayes
+5,1,es_food,U,4,very low,False,1.2983258277672783e-06,1.1521759033203125,Naive Bayes
+5,2,es_food,U,4,very low,False,1.2983258277672783e-06,1.1545579433441162,Naive Bayes
+5,3,es_food,U,4,very low,False,1.2983258277672783e-06,1.151926040649414,Naive Bayes
+5,4,es_food,U,4,very low,False,1.2983258277672783e-06,1.1623029708862305,Naive Bayes
+5,5,es_food,U,4,very low,False,1.2983258277672783e-06,1.1561481952667236,Naive Bayes
+5,6,es_food,U,4,very low,False,1.2983258277672783e-06,1.1579430103302002,Naive Bayes
+5,7,es_food,U,4,very low,False,1.2983258277672783e-06,1.1563520431518555,Naive Bayes
+5,8,es_food,U,4,very low,False,1.2983258277672783e-06,1.1679401397705078,Naive Bayes
+5,9,es_food,U,4,very low,False,1.2983258277672783e-06,1.1501209735870361,Naive Bayes
+6,0,es_contents,F,6,medium,False,4.962033414208223e-06,1.2558472156524658,Naive Bayes
+6,1,es_contents,F,6,medium,False,4.962033414208223e-06,1.1972270011901855,Naive Bayes
+6,2,es_contents,F,6,medium,False,4.962033414208223e-06,1.199510097503662,Naive Bayes
+6,3,es_contents,F,6,medium,False,4.962033414208223e-06,1.210679054260254,Naive Bayes
+6,4,es_contents,F,6,medium,False,4.962033414208223e-06,1.2050058841705322,Naive Bayes
+6,5,es_contents,F,6,medium,False,4.962033414208223e-06,1.200382947921753,Naive Bayes
+6,6,es_contents,F,6,medium,False,4.962033414208223e-06,1.2037420272827148,Naive Bayes
+6,7,es_contents,F,6,medium,False,4.962033414208223e-06,1.2111690044403076,Naive Bayes
+6,8,es_contents,F,6,medium,False,4.962033414208223e-06,1.2120592594146729,Naive Bayes
+6,9,es_contents,F,6,medium,False,4.962033414208223e-06,1.201359748840332,Naive Bayes
+7,0,es_hotelservices,F,3,medium,False,3.6757042763125025e-05,1.2301619052886963,Naive Bayes
+7,1,es_hotelservices,F,3,medium,False,3.6757042763125025e-05,1.2322638034820557,Naive Bayes
+7,2,es_hotelservices,F,3,medium,False,3.6757042763125025e-05,1.233839750289917,Naive Bayes
+7,3,es_hotelservices,F,3,medium,False,3.6757042763125025e-05,1.2369310855865479,Naive Bayes
+7,4,es_hotelservices,F,3,medium,False,3.6757042763125025e-05,1.2302820682525635,Naive Bayes
+7,5,es_hotelservices,F,3,medium,False,3.6757042763125025e-05,1.226794958114624,Naive Bayes
+7,6,es_hotelservices,F,3,medium,False,3.6757042763125025e-05,1.23048996925354,Naive Bayes
+7,7,es_hotelservices,F,3,medium,False,3.6757042763125025e-05,1.2474267482757568,Naive Bayes
+7,8,es_hotelservices,F,3,medium,False,3.6757042763125025e-05,1.2676961421966553,Naive Bayes
+7,9,es_hotelservices,F,3,medium,False,3.6757042763125025e-05,1.228795051574707,Naive Bayes
+8,0,es_health,M,6,very low,False,9.066278252814769e-05,1.203089952468872,Naive Bayes
+8,1,es_health,M,6,very low,False,9.066278252814769e-05,1.2419137954711914,Naive Bayes
+8,2,es_health,M,6,very low,False,9.066278252814769e-05,1.2028470039367676,Naive Bayes
+8,3,es_health,M,6,very low,False,9.066278252814769e-05,1.204115867614746,Naive Bayes
+8,4,es_health,M,6,very low,False,9.066278252814769e-05,1.2040371894836426,Naive Bayes
+8,5,es_health,M,6,very low,False,9.066278252814769e-05,1.193629264831543,Naive Bayes
+8,6,es_health,M,6,very low,False,9.066278252814769e-05,1.1970009803771973,Naive Bayes
+8,7,es_health,M,6,very low,False,9.066278252814769e-05,1.2031900882720947,Naive Bayes
+8,8,es_health,M,6,very low,False,9.066278252814769e-05,1.1992721557617188,Naive Bayes
+8,9,es_health,M,6,very low,False,9.066278252814769e-05,1.1968939304351807,Naive Bayes
+9,0,es_barsandrestaurants,E,4,very low,False,7.024371319361751e-07,1.1485390663146973,Naive Bayes
+9,1,es_barsandrestaurants,E,4,very low,False,7.024371319361751e-07,1.1654231548309326,Naive Bayes
+9,2,es_barsandrestaurants,E,4,very low,False,7.024371319361751e-07,1.1664466857910156,Naive Bayes
+9,3,es_barsandrestaurants,E,4,very low,False,7.024371319361751e-07,1.1518499851226807,Naive Bayes
+9,4,es_barsandrestaurants,E,4,very low,False,7.024371319361751e-07,1.226891040802002,Naive Bayes
+9,5,es_barsandrestaurants,E,4,very low,False,7.024371319361751e-07,1.1744191646575928,Naive Bayes
+9,6,es_barsandrestaurants,E,4,very low,False,7.024371319361751e-07,1.1554460525512695,Naive Bayes
+9,7,es_barsandrestaurants,E,4,very low,False,7.024371319361751e-07,1.1501820087432861,Naive Bayes
+9,8,es_barsandrestaurants,E,4,very low,False,7.024371319361751e-07,1.150062084197998,Naive Bayes
+9,9,es_barsandrestaurants,E,4,very low,False,7.024371319361751e-07,1.1470389366149902,Naive Bayes
+10,0,es_home,U,1,high,False,6.005204345365412e-09,1.122605800628662,Naive Bayes
+10,1,es_home,U,1,high,False,6.005204345365412e-09,1.1129541397094727,Naive Bayes
+10,2,es_home,U,1,high,False,6.005204345365412e-09,1.125000238418579,Naive Bayes
+10,3,es_home,U,1,high,False,6.005204345365412e-09,1.150273084640503,Naive Bayes
+10,4,es_home,U,1,high,False,6.005204345365412e-09,1.1129541397094727,Naive Bayes
+10,5,es_home,U,1,high,False,6.005204345365412e-09,1.1057229042053223,Naive Bayes
+10,6,es_home,U,1,high,False,6.005204345365412e-09,1.1086246967315674,Naive Bayes
+10,7,es_home,U,1,high,False,6.005204345365412e-09,1.125891923904419,Naive Bayes
+10,8,es_home,U,1,high,False,6.005204345365412e-09,1.1110520362854004,Naive Bayes
+10,9,es_home,U,1,high,False,6.005204345365412e-09,1.1152477264404297,Naive Bayes
+11,0,es_health,E,5,low,False,3.3566490081056674e-06,1.2089521884918213,Naive Bayes
+11,1,es_health,E,5,low,False,3.3566490081056674e-06,1.2048749923706055,Naive Bayes
+11,2,es_health,E,5,low,False,3.3566490081056674e-06,1.205003023147583,Naive Bayes
+11,3,es_health,E,5,low,False,3.3566490081056674e-06,1.2154309749603271,Naive Bayes
+11,4,es_health,E,5,low,False,3.3566490081056674e-06,1.279175043106079,Naive Bayes
+11,5,es_health,E,5,low,False,3.3566490081056674e-06,1.2168478965759277,Naive Bayes
+11,6,es_health,E,5,low,False,3.3566490081056674e-06,1.223984956741333,Naive Bayes
+11,7,es_health,E,5,low,False,3.3566490081056674e-06,1.2219336032867432,Naive Bayes
+11,8,es_health,E,5,low,False,3.3566490081056674e-06,1.2173590660095215,Naive Bayes
+11,9,es_health,E,5,low,False,3.3566490081056674e-06,1.2305991649627686,Naive Bayes
+12,0,es_home,M,0,low,False,3.4506230158359853e-06,1.2499799728393555,Naive Bayes
+12,1,es_home,M,0,low,False,3.4506230158359853e-06,1.2696239948272705,Naive Bayes
+12,2,es_home,M,0,low,False,3.4506230158359853e-06,1.2538909912109375,Naive Bayes
+12,3,es_home,M,0,low,False,3.4506230158359853e-06,1.2627100944519043,Naive Bayes
+12,4,es_home,M,0,low,False,3.4506230158359853e-06,1.2568819522857666,Naive Bayes
+12,5,es_home,M,0,low,False,3.4506230158359853e-06,1.2636017799377441,Naive Bayes
+12,6,es_home,M,0,low,False,3.4506230158359853e-06,1.2635290622711182,Naive Bayes
+12,7,es_home,M,0,low,False,3.4506230158359853e-06,1.2577130794525146,Naive Bayes
+12,8,es_home,M,0,low,False,3.4506230158359853e-06,1.3319308757781982,Naive Bayes
+12,9,es_home,M,0,low,False,3.4506230158359853e-06,1.258239984512329,Naive Bayes
+13,0,es_contents,E,1,low,False,1.9097624411306359e-07,1.2009069919586182,Naive Bayes
+13,1,es_contents,E,1,low,False,1.9097624411306359e-07,1.2163779735565186,Naive Bayes
+13,2,es_contents,E,1,low,False,1.9097624411306359e-07,1.1993117332458496,Naive Bayes
+13,3,es_contents,E,1,low,False,1.9097624411306359e-07,1.2031059265136719,Naive Bayes
+13,4,es_contents,E,1,low,False,1.9097624411306359e-07,1.208907127380371,Naive Bayes
+13,5,es_contents,E,1,low,False,1.9097624411306359e-07,1.201056957244873,Naive Bayes
+13,6,es_contents,E,1,low,False,1.9097624411306359e-07,1.2755000591278076,Naive Bayes
+13,7,es_contents,E,1,low,False,1.9097624411306359e-07,1.2047359943389893,Naive Bayes
+13,8,es_contents,E,1,low,False,1.9097624411306359e-07,1.2010669708251953,Naive Bayes
+13,9,es_contents,E,1,low,False,1.9097624411306359e-07,1.248276948928833,Naive Bayes
+14,0,es_travel,M,6,medium,True,9.135772066128633e-07,1.1873269081115723,Naive Bayes
+14,1,es_travel,M,6,medium,True,9.135772066128633e-07,1.2009191513061523,Naive Bayes
+14,2,es_travel,M,6,medium,True,9.135772066128633e-07,1.191612958908081,Naive Bayes
+14,3,es_travel,M,6,medium,True,9.135772066128633e-07,1.1931631565093994,Naive Bayes
+14,4,es_travel,M,6,medium,True,9.135772066128633e-07,1.348816156387329,Naive Bayes
+14,5,es_travel,M,6,medium,True,9.135772066128633e-07,1.1923391819000244,Naive Bayes
+14,6,es_travel,M,6,medium,True,9.135772066128633e-07,1.1891071796417236,Naive Bayes
+14,7,es_travel,M,6,medium,True,9.135772066128633e-07,1.211148977279663,Naive Bayes
+14,8,es_travel,M,6,medium,True,9.135772066128633e-07,1.1831989288330078,Naive Bayes
+14,9,es_travel,M,6,medium,True,9.135772066128633e-07,1.1818428039550781,Naive Bayes
+15,0,es_sportsandtoys,E,2,medium,False,2.8936737537372953e-07,1.159886121749878,Naive Bayes
+15,1,es_sportsandtoys,E,2,medium,False,2.8936737537372953e-07,1.159822940826416,Naive Bayes
+15,2,es_sportsandtoys,E,2,medium,False,2.8936737537372953e-07,1.1606779098510742,Naive Bayes
+15,3,es_sportsandtoys,E,2,medium,False,2.8936737537372953e-07,1.1642978191375732,Naive Bayes
+15,4,es_sportsandtoys,E,2,medium,False,2.8936737537372953e-07,1.1677501201629639,Naive Bayes
+15,5,es_sportsandtoys,E,2,medium,False,2.8936737537372953e-07,1.1693811416625977,Naive Bayes
+15,6,es_sportsandtoys,E,2,medium,False,2.8936737537372953e-07,1.162196159362793,Naive Bayes
+15,7,es_sportsandtoys,E,2,medium,False,2.8936737537372953e-07,1.1677780151367188,Naive Bayes
+15,8,es_sportsandtoys,E,2,medium,False,2.8936737537372953e-07,1.163771152496338,Naive Bayes
+15,9,es_sportsandtoys,E,2,medium,False,2.8936737537372953e-07,1.1661312580108643,Naive Bayes
+16,0,es_barsandrestaurants,F,4,very low,False,0.0001916766333534508,1.2384090423583984,Naive Bayes
+16,1,es_barsandrestaurants,F,4,very low,False,0.0001916766333534508,1.2360069751739502,Naive Bayes
+16,2,es_barsandrestaurants,F,4,very low,False,0.0001916766333534508,1.2342898845672607,Naive Bayes
+16,3,es_barsandrestaurants,F,4,very low,False,0.0001916766333534508,1.2443687915802002,Naive Bayes
+16,4,es_barsandrestaurants,F,4,very low,False,0.0001916766333534508,1.2340319156646729,Naive Bayes
+16,5,es_barsandrestaurants,F,4,very low,False,0.0001916766333534508,1.224320888519287,Naive Bayes
+16,6,es_barsandrestaurants,F,4,very low,False,0.0001916766333534508,1.2304389476776123,Naive Bayes
+16,7,es_barsandrestaurants,F,4,very low,False,0.0001916766333534508,1.2266080379486084,Naive Bayes
+16,8,es_barsandrestaurants,F,4,very low,False,0.0001916766333534508,1.2479441165924072,Naive Bayes
+16,9,es_barsandrestaurants,F,4,very low,False,0.0001916766333534508,1.2388222217559814,Naive Bayes
+17,0,es_hyper,F,3,low,False,0.0008661922313253891,1.311784029006958,Naive Bayes
+17,1,es_hyper,F,3,low,False,0.0008661922313253891,1.320512056350708,Naive Bayes
+17,2,es_hyper,F,3,low,False,0.0008661922313253891,1.3088350296020508,Naive Bayes
+17,3,es_hyper,F,3,low,False,0.0008661922313253891,1.3119370937347412,Naive Bayes
+17,4,es_hyper,F,3,low,False,0.0008661922313253891,1.3284869194030762,Naive Bayes
+17,5,es_hyper,F,3,low,False,0.0008661922313253891,1.3120770454406738,Naive Bayes
+17,6,es_hyper,F,3,low,False,0.0008661922313253891,1.304325819015503,Naive Bayes
+17,7,es_hyper,F,3,low,False,0.0008661922313253891,1.3089940547943115,Naive Bayes
+17,8,es_hyper,F,3,low,False,0.0008661922313253891,1.308457851409912,Naive Bayes
+17,9,es_hyper,F,3,low,False,0.0008661922313253891,1.3160409927368164,Naive Bayes
+18,0,es_sportsandtoys,U,4,low,False,3.5931368805759887e-07,1.214634895324707,Naive Bayes
+18,1,es_sportsandtoys,U,4,low,False,3.5931368805759887e-07,1.2190327644348145,Naive Bayes
+18,2,es_sportsandtoys,U,4,low,False,3.5931368805759887e-07,1.21657395362854,Naive Bayes
+18,3,es_sportsandtoys,U,4,low,False,3.5931368805759887e-07,1.2194979190826416,Naive Bayes
+18,4,es_sportsandtoys,U,4,low,False,3.5931368805759887e-07,1.2821660041809082,Naive Bayes
+18,5,es_sportsandtoys,U,4,low,False,3.5931368805759887e-07,1.2148799896240234,Naive Bayes
+18,6,es_sportsandtoys,U,4,low,False,3.5931368805759887e-07,1.275832176208496,Naive Bayes
+18,7,es_sportsandtoys,U,4,low,False,3.5931368805759887e-07,1.2227928638458252,Naive Bayes
+18,8,es_sportsandtoys,U,4,low,False,3.5931368805759887e-07,1.2179300785064697,Naive Bayes
+18,9,es_sportsandtoys,U,4,low,False,3.5931368805759887e-07,1.2186031341552734,Naive Bayes
+19,0,es_fashion,E,0,low,False,5.7206364025747326e-08,1.196826696395874,Naive Bayes
+19,1,es_fashion,E,0,low,False,5.7206364025747326e-08,1.2058520317077637,Naive Bayes
+19,2,es_fashion,E,0,low,False,5.7206364025747326e-08,1.2035126686096191,Naive Bayes
+19,3,es_fashion,E,0,low,False,5.7206364025747326e-08,1.1864712238311768,Naive Bayes
+19,4,es_fashion,E,0,low,False,5.7206364025747326e-08,1.1955318450927734,Naive Bayes
+19,5,es_fashion,E,0,low,False,5.7206364025747326e-08,1.1871039867401123,Naive Bayes
+19,6,es_fashion,E,0,low,False,5.7206364025747326e-08,1.1917169094085693,Naive Bayes
+19,7,es_fashion,E,0,low,False,5.7206364025747326e-08,1.1917152404785156,Naive Bayes
+19,8,es_fashion,E,0,low,False,5.7206364025747326e-08,1.1967389583587646,Naive Bayes
+19,9,es_fashion,E,0,low,False,5.7206364025747326e-08,1.205152988433838,Naive Bayes
+20,0,es_travel,M,5,high,True,2.6355122214964404e-05,1.183560848236084,Naive Bayes
+20,1,es_travel,M,5,high,True,2.6355122214964404e-05,1.195054054260254,Naive Bayes
+20,2,es_travel,M,5,high,True,2.6355122214964404e-05,1.2000048160552979,Naive Bayes
+20,3,es_travel,M,5,high,True,2.6355122214964404e-05,1.1807811260223389,Naive Bayes
+20,4,es_travel,M,5,high,True,2.6355122214964404e-05,1.1838209629058838,Naive Bayes
+20,5,es_travel,M,5,high,True,2.6355122214964404e-05,1.1854901313781738,Naive Bayes
+20,6,es_travel,M,5,high,True,2.6355122214964404e-05,1.1912267208099365,Naive Bayes
+20,7,es_travel,M,5,high,True,2.6355122214964404e-05,1.1915161609649658,Naive Bayes
+20,8,es_travel,M,5,high,True,2.6355122214964404e-05,1.2241628170013428,Naive Bayes
+20,9,es_travel,M,5,high,True,2.6355122214964404e-05,1.1875929832458496,Naive Bayes
+21,0,es_hotelservices,M,3,medium,False,3.0567003576820664e-05,1.218750238418579,Naive Bayes
+21,1,es_hotelservices,M,3,medium,False,3.0567003576820664e-05,1.2284152507781982,Naive Bayes
+21,2,es_hotelservices,M,3,medium,False,3.0567003576820664e-05,1.2184391021728516,Naive Bayes
+21,3,es_hotelservices,M,3,medium,False,3.0567003576820664e-05,1.214914083480835,Naive Bayes
+21,4,es_hotelservices,M,3,medium,False,3.0567003576820664e-05,1.2202880382537842,Naive Bayes
+21,5,es_hotelservices,M,3,medium,False,3.0567003576820664e-05,1.216271162033081,Naive Bayes
+21,6,es_hotelservices,M,3,medium,False,3.0567003576820664e-05,1.2197821140289307,Naive Bayes
+21,7,es_hotelservices,M,3,medium,False,3.0567003576820664e-05,1.243863821029663,Naive Bayes
+21,8,es_hotelservices,M,3,medium,False,3.0567003576820664e-05,1.214797019958496,Naive Bayes
+21,9,es_hotelservices,M,3,medium,False,3.0567003576820664e-05,1.2205109596252441,Naive Bayes
+22,0,es_food,U,6,high,False,4.318948708108378e-08,1.1152629852294922,Naive Bayes
+22,1,es_food,U,6,high,False,4.318948708108378e-08,1.1054792404174805,Naive Bayes
+22,2,es_food,U,6,high,False,4.318948708108378e-08,1.1247999668121338,Naive Bayes
+22,3,es_food,U,6,high,False,4.318948708108378e-08,1.1210179328918457,Naive Bayes
+22,4,es_food,U,6,high,False,4.318948708108378e-08,1.1138763427734375,Naive Bayes
+22,5,es_food,U,6,high,False,4.318948708108378e-08,1.118372917175293,Naive Bayes
+22,6,es_food,U,6,high,False,4.318948708108378e-08,1.1754708290100098,Naive Bayes
+22,7,es_food,U,6,high,False,4.318948708108378e-08,1.1135859489440918,Naive Bayes
+22,8,es_food,U,6,high,False,4.318948708108378e-08,1.115469217300415,Naive Bayes
+22,9,es_food,U,6,high,False,4.318948708108378e-08,1.114975929260254,Naive Bayes
+23,0,es_otherservices,E,2,low,False,4.75437394376693e-07,1.2402927875518799,Naive Bayes
+23,1,es_otherservices,E,2,low,False,4.75437394376693e-07,1.2441270351409912,Naive Bayes
+23,2,es_otherservices,E,2,low,False,4.75437394376693e-07,1.2386260032653809,Naive Bayes
+23,3,es_otherservices,E,2,low,False,4.75437394376693e-07,1.2470250129699707,Naive Bayes
+23,4,es_otherservices,E,2,low,False,4.75437394376693e-07,1.2462620735168457,Naive Bayes
+23,5,es_otherservices,E,2,low,False,4.75437394376693e-07,1.252967357635498,Naive Bayes
+23,6,es_otherservices,E,2,low,False,4.75437394376693e-07,1.2756121158599854,Naive Bayes
+23,7,es_otherservices,E,2,low,False,4.75437394376693e-07,1.238511085510254,Naive Bayes
+23,8,es_otherservices,E,2,low,False,4.75437394376693e-07,1.2343127727508545,Naive Bayes
+23,9,es_otherservices,E,2,low,False,4.75437394376693e-07,1.2325377464294434,Naive Bayes
+24,0,es_home,E,6,high,True,1.72737391301041e-08,1.1348578929901123,Naive Bayes
+24,1,es_home,E,6,high,True,1.72737391301041e-08,1.113095760345459,Naive Bayes
+24,2,es_home,E,6,high,True,1.72737391301041e-08,1.1246747970581055,Naive Bayes
+24,3,es_home,E,6,high,True,1.72737391301041e-08,1.1759119033813477,Naive Bayes
+24,4,es_home,E,6,high,True,1.72737391301041e-08,1.1344330310821533,Naive Bayes
+24,5,es_home,E,6,high,True,1.72737391301041e-08,1.1150548458099365,Naive Bayes
+24,6,es_home,E,6,high,True,1.72737391301041e-08,1.1036121845245361,Naive Bayes
+24,7,es_home,E,6,high,True,1.72737391301041e-08,1.1169581413269043,Naive Bayes
+24,8,es_home,E,6,high,True,1.72737391301041e-08,1.1094698905944824,Naive Bayes
+24,9,es_home,E,6,high,True,1.72737391301041e-08,1.1132001876831055,Naive Bayes
+25,0,es_barsandrestaurants,F,2,high,False,4.448181743146579e-05,1.2305831909179688,Naive Bayes
+25,1,es_barsandrestaurants,F,2,high,False,4.448181743146579e-05,1.2421948909759521,Naive Bayes
+25,2,es_barsandrestaurants,F,2,high,False,4.448181743146579e-05,1.2302641868591309,Naive Bayes
+25,3,es_barsandrestaurants,F,2,high,False,4.448181743146579e-05,1.2308681011199951,Naive Bayes
+25,4,es_barsandrestaurants,F,2,high,False,4.448181743146579e-05,1.2218008041381836,Naive Bayes
+25,5,es_barsandrestaurants,F,2,high,False,4.448181743146579e-05,1.280034065246582,Naive Bayes
+25,6,es_barsandrestaurants,F,2,high,False,4.448181743146579e-05,1.226193904876709,Naive Bayes
+25,7,es_barsandrestaurants,F,2,high,False,4.448181743146579e-05,1.2264339923858643,Naive Bayes
+25,8,es_barsandrestaurants,F,2,high,False,4.448181743146579e-05,1.2347371578216553,Naive Bayes
+25,9,es_barsandrestaurants,F,2,high,False,4.448181743146579e-05,1.2262818813323975,Naive Bayes
+26,0,es_health,M,1,low,False,0.0007061983190264957,1.2715098857879639,Naive Bayes
+26,1,es_health,M,1,low,False,0.0007061983190264957,1.2791969776153564,Naive Bayes
+26,2,es_health,M,1,low,False,0.0007061983190264957,1.2703897953033447,Naive Bayes
+26,3,es_health,M,1,low,False,0.0007061983190264957,1.2823009490966797,Naive Bayes
+26,4,es_health,M,1,low,False,0.0007061983190264957,1.2797188758850098,Naive Bayes
+26,5,es_health,M,1,low,False,0.0007061983190264957,1.2790420055389404,Naive Bayes
+26,6,es_health,M,1,low,False,0.0007061983190264957,1.278907060623169,Naive Bayes
+26,7,es_health,M,1,low,False,0.0007061983190264957,1.291128158569336,Naive Bayes
+26,8,es_health,M,1,low,False,0.0007061983190264957,1.2985649108886719,Naive Bayes
+26,9,es_health,M,1,low,False,0.0007061983190264957,1.2782189846038818,Naive Bayes
+27,0,es_fashion,F,6,very low,False,4.786636563517128e-05,1.2105252742767334,Naive Bayes
+27,1,es_fashion,F,6,very low,False,4.786636563517128e-05,1.2103779315948486,Naive Bayes
+27,2,es_fashion,F,6,very low,False,4.786636563517128e-05,1.2108569145202637,Naive Bayes
+27,3,es_fashion,F,6,very low,False,4.786636563517128e-05,1.2183752059936523,Naive Bayes
+27,4,es_fashion,F,6,very low,False,4.786636563517128e-05,1.2133610248565674,Naive Bayes
+27,5,es_fashion,F,6,very low,False,4.786636563517128e-05,1.2282533645629883,Naive Bayes
+27,6,es_fashion,F,6,very low,False,4.786636563517128e-05,1.211184024810791,Naive Bayes
+27,7,es_fashion,F,6,very low,False,4.786636563517128e-05,1.2106990814208984,Naive Bayes
+27,8,es_fashion,F,6,very low,False,4.786636563517128e-05,1.2285418510437012,Naive Bayes
+27,9,es_fashion,F,6,very low,False,4.786636563517128e-05,1.2067561149597168,Naive Bayes
+28,0,es_tech,U,U,medium,False,8.839345604287506e-10,1.1128737926483154,Naive Bayes
+28,1,es_tech,U,U,medium,False,8.839345604287506e-10,1.11946702003479,Naive Bayes
+28,2,es_tech,U,U,medium,False,8.839345604287506e-10,1.1131761074066162,Naive Bayes
+28,3,es_tech,U,U,medium,False,8.839345604287506e-10,1.1140201091766357,Naive Bayes
+28,4,es_tech,U,U,medium,False,8.839345604287506e-10,1.114412784576416,Naive Bayes
+28,5,es_tech,U,U,medium,False,8.839345604287506e-10,1.1166539192199707,Naive Bayes
+28,6,es_tech,U,U,medium,False,8.839345604287506e-10,1.1294288635253906,Naive Bayes
+28,7,es_tech,U,U,medium,False,8.839345604287506e-10,1.1302461624145508,Naive Bayes
+28,8,es_tech,U,U,medium,False,8.839345604287506e-10,1.1116580963134766,Naive Bayes
+28,9,es_tech,U,U,medium,False,8.839345604287506e-10,1.1170260906219482,Naive Bayes
+29,0,es_wellnessandbeauty,M,1,medium,False,0.00014498620179640383,1.202944040298462,Naive Bayes
+29,1,es_wellnessandbeauty,M,1,medium,False,0.00014498620179640383,1.2462968826293945,Naive Bayes
+29,2,es_wellnessandbeauty,M,1,medium,False,0.00014498620179640383,1.2031121253967285,Naive Bayes
+29,3,es_wellnessandbeauty,M,1,medium,False,0.00014498620179640383,1.1949050426483154,Naive Bayes
+29,4,es_wellnessandbeauty,M,1,medium,False,0.00014498620179640383,1.2031586170196533,Naive Bayes
+29,5,es_wellnessandbeauty,M,1,medium,False,0.00014498620179640383,1.1955680847167969,Naive Bayes
+29,6,es_wellnessandbeauty,M,1,medium,False,0.00014498620179640383,1.2047009468078613,Naive Bayes
+29,7,es_wellnessandbeauty,M,1,medium,False,0.00014498620179640383,1.1971650123596191,Naive Bayes
+29,8,es_wellnessandbeauty,M,1,medium,False,0.00014498620179640383,1.2182819843292236,Naive Bayes
+29,9,es_wellnessandbeauty,M,1,medium,False,0.00014498620179640383,1.20326828956604,Naive Bayes
