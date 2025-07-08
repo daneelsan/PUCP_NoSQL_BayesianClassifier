@@ -57,8 +57,6 @@ print(f"Descripción del dataset:\n{df.describe()}\n")
 print(f"Primeras 5 filas:\n{df[0:5]}\n")
 
 # TODO: Guardar esto en un lugar más apropriado (see .env)
-# os.environ["ATLASMONGODB_CONNECTION_STRING"] = "mongodb+srv://hdsanchez:danielsd300895@clusterpucp.wk8tiag.mongodb.ne\
-# t/?retryWrites=true&w=majority&appName=ClusterPUCP"
 
 # Conectar a MongoDB Atlas
 client = MongoClient(os.environ["ATLASMONGODB_CONNECTION_STRING"])
